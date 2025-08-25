@@ -9,7 +9,7 @@ export function ImpactSection() {
     { number: "50K+", label: "Devices Recycled", icon: "📱" },
     { number: "25K+", label: "Active Users", icon: "👥" },
     { number: "100+", label: "Partner Companies", icon: "🏢" },
-    { number: "500T", label: "CO₂ Saved", icon: "🌱" },
+    { number: "1K+", label: "project", icon: "🎯 " },
   ]
 
   return (

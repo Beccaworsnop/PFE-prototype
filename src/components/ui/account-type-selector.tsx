@@ -14,7 +14,7 @@ export function AccountTypeSelector({ onSelect }: AccountTypeSelectorProps) {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-white text-center mb-6">{t("signup.accountType")}</h3>
+      <h3 className="text-lg font-semibold text-white text-center mb-6">{t("What's your status ?")}</h3>
       <div className="grid grid-cols-1 gap-4">
         <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Button
@@ -24,8 +24,7 @@ export function AccountTypeSelector({ onSelect }: AccountTypeSelectorProps) {
             onClick={() => onSelect("customer")}
           >
             <User className="w-8 h-8 text-blue-400" />
-            <span className="font-semibold">{t("signup.customer")}</span>
-            <span className="text-xs text-gray-400">{t("signup.customerDesc")}</span>
+            <span className="font-semibold">{t("Customer")}</span>
           </Button>
         </motion.div>
         <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -36,8 +35,7 @@ export function AccountTypeSelector({ onSelect }: AccountTypeSelectorProps) {
             onClick={() => onSelect("company")}
           >
             <Building2 className="w-8 h-8 text-blue-400" />
-            <span className="font-semibold">{t("signup.company")}</span>
-            <span className="text-xs text-gray-400">{t("signup.companyDesc")}</span>
+            <span className="font-semibold">{t("company")}</span>
           </Button>
         </motion.div>
       </div>

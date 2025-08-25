@@ -28,9 +28,9 @@ export function AboutHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              About
+              About 
               <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                Reteck Solutions
+                Reteck Solutions !
               </span>
             </motion.h1>
             <motion.p

@@ -37,7 +37,7 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
     if (!agreedToTerms) return
 
     if (accountType === "company" && !formData.contractId) {
-      alert(t("signup.contractIdRequired"))
+      alert(t("contract Id Required"))
       return
     }
 
@@ -71,22 +71,22 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
             <Building2 className="w-5 h-5 text-blue-400" />
           )}
           <span className="text-white font-medium">
-            {accountType === "customer" ? t("signup.customer") : t("signup.company")}
+            {accountType === "customer" ? t("customer") : t("company")}
           </span>
         </div>
         <Button type="button" variant="ghost" size="sm" onClick={onBack} className="text-blue-400 hover:text-blue-300">
-          {t("signup.change")}
+          {t("change")}
         </Button>
       </div>
 
       {accountType === "company" && (
         <div className="space-y-2">
           <Label htmlFor="contractId" className="text-white">
-            {t("signup.contractId")} *
+            {t("contract Id")} 
           </Label>
           <Input
             id="contractId"
-            placeholder={t("signup.contractIdPlaceholder")}
+            placeholder={t("contract Id")}
             value={formData.contractId}
             onChange={(e) => handleInputChange("contractId", e.target.value)}
             required
@@ -98,11 +98,11 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
       {accountType === "company" ? (
         <div className="space-y-2">
           <Label htmlFor="companyName" className="text-white">
-            {t("signup.companyName")} *
+            {t("company Name")} 
           </Label>
           <Input
             id="companyName"
-            placeholder={t("signup.companyNamePlaceholder")}
+            placeholder={t("Company Name")}
             value={formData.companyName}
             onChange={(e) => handleInputChange("companyName", e.target.value)}
             required
@@ -113,11 +113,11 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
             <Label htmlFor="firstName" className="text-white">
-              {t("signup.firstName")} *
+              {t("First Name")} 
             </Label>
             <Input
               id="firstName"
-              placeholder={t("signup.firstNamePlaceholder")}
+              placeholder={t("first Name")}
               value={formData.firstName}
               onChange={(e) => handleInputChange("firstName", e.target.value)}
               required
@@ -126,11 +126,11 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
           </div>
           <div className="space-y-2">
             <Label htmlFor="lastName" className="text-white">
-              {t("signup.lastName")} *
+              {t("Last Name")} 
             </Label>
             <Input
               id="lastName"
-              placeholder={t("signup.lastNamePlaceholder")}
+              placeholder={t("Last Name")}
               value={formData.lastName}
               onChange={(e) => handleInputChange("lastName", e.target.value)}
               required
@@ -142,12 +142,12 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
 
       <div className="space-y-2">
         <Label htmlFor="email" className="text-white">
-          {t("signup.email")} *
+          {t("email")} 
         </Label>
         <Input
           id="email"
           type="email"
-          placeholder={t("signup.emailPlaceholder")}
+          placeholder={t("email")}
           value={formData.email}
           onChange={(e) => handleInputChange("email", e.target.value)}
           required
@@ -157,12 +157,12 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
 
       <div className="space-y-2">
         <Label htmlFor="phone" className="text-white">
-          {t("signup.phone")} *
+          {t("phone number")} 
         </Label>
         <Input
           id="phone"
           type="tel"
-          placeholder={t("signup.phonePlaceholder")}
+          placeholder={t("phone number")}
           value={formData.phone}
           onChange={(e) => handleInputChange("phone", e.target.value)}
           required
@@ -172,13 +172,13 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
 
       <div className="space-y-2">
         <Label htmlFor="password" className="text-white">
-          {t("signup.password")} *
+          {t("password")} 
         </Label>
         <div className="relative">
           <Input
             id="password"
             type={showPassword ? "text" : "password"}
-            placeholder={t("signup.passwordPlaceholder")}
+            placeholder={t("password")}
             value={formData.password}
             onChange={(e) => handleInputChange("password", e.target.value)}
             required
@@ -203,14 +203,9 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
           onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)}
         />
         <Label htmlFor="terms" className="text-sm text-gray-300">
-          {t("signup.agreeToTerms")}{" "}
+          {t("agree to terms of sevice and privacy policy")}{" "}
           <Link href="/terms" className="text-blue-400 hover:text-blue-300">
-            {t("signup.termsOfService")}
           </Link>{" "}
-          {t("signup.and")}{" "}
-          <Link href="/privacy" className="text-blue-400 hover:text-blue-300">
-            {t("signup.privacyPolicy")}
-          </Link>
         </Label>
       </div>
 
@@ -220,7 +215,7 @@ export function SignupForm({ accountType, onBack, onSuccess }: SignupFormProps) 
           className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
           disabled={isLoading || !agreedToTerms}
         >
-          {isLoading ? t("signup.creatingAccount") : t("signup.createAccount")}
+          {isLoading ? t("create Account") : t("create Account")}
         </Button>
       </motion.div>
     </form>

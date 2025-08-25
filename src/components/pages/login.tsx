@@ -53,19 +53,17 @@ export function LoginPage() {
             >
               <Recycle className="w-8 h-8 text-white" />
             </motion.div>
-            <CardTitle className="text-2xl font-bold text-white">{t("login.welcome")}</CardTitle>
-            <CardDescription className="text-gray-300">{t("login.subtitle")}</CardDescription>
+            <CardTitle className="text-2xl font-bold text-white">{t("Welcome back !")}</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-white">
-                  {t("login.email")}
                 </Label>
                 <Input
                   id="email"
                   type="email"
-                  placeholder={t("login.emailPlaceholder")}
+                  placeholder={t("Email")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -74,13 +72,13 @@ export function LoginPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-white">
-                  {t("login.password")}
+                  
                 </Label>
                 <div className="relative">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder={t("login.passwordPlaceholder")}
+                    placeholder={t("Password")}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
@@ -103,7 +101,7 @@ export function LoginPage() {
               </div>
               <div className="flex items-center justify-between">
                 <Link href="/forgot-password" className="text-sm text-blue-400 hover:text-blue-300">
-                  {t("login.forgotPassword")}
+                  {t("Forgot Password ?")}
                 </Link>
               </div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -112,15 +110,15 @@ export function LoginPage() {
                   className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
                   disabled={isLoading}
                 >
-                  {isLoading ? t("login.signingIn") : t("login.signIn")}
+                  {isLoading ? t("login.signingIn") : t("log In")}
                 </Button>
               </motion.div>
             </form>
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-300">
-                {t("login.noAccount")}{" "}
+                {t("No account ?")}{" "}
                 <Link href="/signup" className="text-blue-400 hover:text-blue-300 font-medium">
-                  {t("login.signUpLink")}
+                  {t("Sign up")}
                 </Link>
               </p>
             </div>

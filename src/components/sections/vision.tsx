@@ -15,7 +15,7 @@ export function VisionSection() {
               <div className="relative">
                 <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-2">
                   <img
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/fix.png"
                     alt="Vision Image"
                     className="w-full h-80 object-cover rounded-xl"
                   />
@@ -39,8 +39,7 @@ export function VisionSection() {
                   device has a second life.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  By 2030, we aim to have recycled over 1 million devices, created thousands of green jobs, and
-                  established Algeria as a model for sustainable technology practices in the region.
+                  While we aim to build the largest tech community of e-waste awareness and robotics anthusiasts
                 </p>
               </Card>
             </motion.div>

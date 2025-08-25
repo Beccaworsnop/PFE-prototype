@@ -14,7 +14,7 @@ export function ImageStatsSection() {
             <motion.div className="relative" whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }}>
               <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-2">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/keyboard.png"
                   alt="E-waste recycling facility"
                   className="w-full h-80 object-cover rounded-xl"
                 />

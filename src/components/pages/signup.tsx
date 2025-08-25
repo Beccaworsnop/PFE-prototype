@@ -39,8 +39,7 @@ export function SignupPage() {
             >
               <Recycle className="w-8 h-8 text-white" />
             </motion.div>
-            <CardTitle className="text-2xl font-bold text-white">{t("signup.title")}</CardTitle>
-            <CardDescription className="text-gray-300">{t("signup.subtitle")}</CardDescription>
+            <CardTitle className="text-2xl font-bold text-white">{t("sign up to join us !")}</CardTitle>
           </CardHeader>
           <CardContent>
             {!accountType ? (
@@ -56,9 +55,9 @@ export function SignupPage() {
             {accountType && (
               <div className="mt-6 text-center">
                 <p className="text-sm text-gray-300">
-                  {t("signup.alreadyHaveAccount")}{" "}
+                  {t("Already Have Account ?")}{" "}
                   <Link href="/login" className="text-blue-400 hover:text-blue-300 font-medium">
-                    {t("signup.signInLink")}
+                    {t("signup")}
                   </Link>
                 </p>
               </div>

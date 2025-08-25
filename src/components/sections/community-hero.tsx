@@ -51,7 +51,7 @@ export function CommunityHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Join thousands of eco-conscious individuals making a real difference in Algeria's environmental future
+              Join many eco-conscious individuals making a real difference in Algeria's environmental future while having fun !
             </motion.p>
           </div>
         </AnimatedSection>

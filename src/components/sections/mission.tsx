@@ -25,6 +25,7 @@ export function MissionSection() {
                 <p className="text-gray-300 leading-relaxed">
                   Through cutting-edge technology and community engagement, we're making e-waste recycling accessible,
                   rewarding, and impactful for every Algerian citizen and business.
+                  we also offer software services and educational courses in robotics and hardware management !
                 </p>
               </Card>
             </motion.div>
@@ -32,7 +33,7 @@ export function MissionSection() {
               <div className="relative">
                 <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-2">
                   <img
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/tools.png"
                     alt="Mission Image"
                     className="w-full h-80 object-cover rounded-xl"
                   />

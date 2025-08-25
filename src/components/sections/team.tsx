@@ -7,40 +7,40 @@ import { AnimatedSection } from "@/components/ui/animatedsection"
 export function TeamSection() {
   const teamMembers = [
     {
-      name: "Ahmed Benali",
+      name: "Becca",
       position: "CEO & Founder",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Environmental engineer with 15+ years in sustainable technology",
+      bio: "Digital Management Master Student",
     },
     {
-      name: "Fatima Khelifi",
-      position: "CTO",
+      name: "Worker 2",
+      position: "Software Developer",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Tech innovator specializing in recycling automation systems",
+      bio: "IT department",
     },
     {
-      name: "Omar Mansouri",
-      position: "Operations Director",
+      name: "Worker 3",
+      position: "Marketing",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Logistics expert ensuring efficient e-waste collection nationwide",
+      bio: "Social Media management",
     },
     {
-      name: "Amina Boudjema",
-      position: "Sustainability Manager",
+      name: "Worker 4",
+      position: "Community manager",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Environmental scientist driving our green initiatives",
+      bio: "Events management",
     },
     {
-      name: "Yacine Hamidi",
-      position: "Data Security Lead",
+      name: "worker 5",
+      position: "Technician",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Cybersecurity specialist ensuring complete data protection",
+      bio: "Leader of recycle team",
     },
     {
-      name: "Leila Cherif",
-      position: "Community Manager",
+      name: "Worker 6",
+      position: "Technician",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Building bridges between technology and environmental awareness",
+      bio: "Leader of reparation team",
     },
   ]
 
